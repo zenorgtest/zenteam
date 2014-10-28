@@ -36,6 +36,9 @@ namespace Injector
 
         public void Open()
         {
+
+// ------------------ added comment 
+
             FirmwareSection i = 0;
 
             //Get the header and base page
