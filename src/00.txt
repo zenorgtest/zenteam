@@ -14,13 +14,7 @@ namespace Injector
         private Dictionary<FirmwareSection, byte[]> _sections;
         private byte[] _footer;
 
-        public FirmwareImage(string fileName)
-        {
-            _fileName = fileName;
-            _header = new byte[0x200];
-            _sections = new Dictionary<FirmwareSection, byte[]>();
-            _sections.Add(FirmwareSection.Base, new byte[0x6000]);
-        }
+//  ------------------------- deleted GetSection
 
         public byte[] GetSection(FirmwareSection section)
         {
